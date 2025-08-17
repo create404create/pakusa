@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Number Lookup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>International Number Lookup</h1>
+        <p class="owner">Owner: AYAN AHMAD</p>
+        
+        <div class="country-selector">
+            <div class="country-btn active" id="pakistan-btn">Pakistan</div>
+            <div class="country-btn" id="usa-btn">USA</div>
+        </div>
+        
+        <div class="input-section" id="pakistan-input">
+            <p>Enter 10-digit phone number or 13-digit CNIC:</p>
+            <input type="text" id="pak-number" placeholder="e.g. 3077978060 or 3520212345671">
+            <button id="pak-search">Search Pakistani Number</button>
+        </div>
+        
+        <div class="input-section" id="usa-input" style="display: none;">
+            <p>Enter USA phone number (without +1):</p>
+            <input type="text" id="usa-number" placeholder="e.g. 6154432211">
+            <button id="usa-search">Search USA Number</button>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Searching... Please wait</p>
+        </div>
+        
+        <div class="result" id="result">
+            <div class="result-header">
+                <h3>Search Results</h3>
+                <button id="copy-btn">Copy Results</button>
+            </div>
+            <pre id="result-content"></pre>
+        </div>
+    </div>
+    
+    <div class="footer">
+        © 2023 International Number Lookup | All rights reserved
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
